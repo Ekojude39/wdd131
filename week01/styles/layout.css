@@ -1,0 +1,84 @@
+:root{
+  ---paragraph-color: #eedb0b;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+  
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+header{
+  background-color: rgb(49, 155, 216);
+
+}
+
+header h1 {
+  color: white;
+  margin: 10px;
+  padding: 20px ;
+  font-size: 1.2rem;
+}
+
+
+
+nav {
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: row;
+    background-color: black;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+nav a {
+  
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: var(---paragraph-color);
+}
+
+main {
+  background-color: gray;
+  padding-bottom: 400px;
+}
+
+main p { 
+  margin: 10px;
+  color: white;
+}
+
+aside {
+  background-color: #5a5a52;
+}
+
+aside p { 
+  margin: 10px;
+  color: white;
+}
+
+footer {
+  background-color: black;
+  padding: 30px;
+  color: white;
+  text-align: center;
+}
