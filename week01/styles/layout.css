@@ -54,7 +54,8 @@ nav a {
 
 nav a:hover {
   font-weight: bold;
-  color: var(--paragraph-color);
+  color: gray;
+  border: 1px solid rgb(127, 120, 120);
 }
 
 main {

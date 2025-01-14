@@ -1,0 +1,163 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  h1,h2,h3,h4,h5,h6 {
+    font-family: Arial, Helvetica, sans-serif;
+  
+  }
+    
+  
+  header{
+    background-color: rgb(49, 155, 216);
+  
+  }
+  
+  header h1 {
+    color: white;
+    margin: 10px;
+    padding: 20px ;
+    font-size: 1.2rem;
+  }
+  
+  
+  
+  nav {
+      align-items: center;
+      justify-content: space-evenly;
+      align-content: center;
+      flex-direction: row;
+      background-color: black;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+  }
+
+  .name {
+    color: yellow;
+  }
+  
+  nav a {
+    
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+  }
+  
+  nav a:hover {
+    font-weight: bold;
+    color: rgb(253, 253, 73);
+  }
+  
+  main {
+    background-color: gray;
+  }
+
+  .img1 img {
+    width: auto;
+    height: 300px;
+    margin-right: 10px;
+  }
+  
+  main p { 
+    margin: 10px;
+    color: black;
+  }
+
+
+
+  footer {
+    background-color: black;
+    padding: 30px;
+    color: white;
+    text-align: center;
+  }
+
+  .card-griding{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+
+  .card2{
+    padding-bottom: 198px;
+    padding-top: 198px;
+  }
+
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .grid p{
+    grid-column: 1;
+  }
+
+  .img1{
+    grid-column: 2;
+  }
+  
+  figure img {
+    width: 200px;
+    height: auto;
+    grid-column: 1;
+  }
+
+  .country {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .country p {
+    grid-column: 2;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+  .grid {
+   
+    padding-bottom: 10px;
+   
+  }
+
+
+  .card{
+    background-color: aliceblue;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: 20px;
+  
+  }
+
+  .card ul{
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+  }
+  
+  .card h1{
+    background-color: rgb(49, 155, 216);
+    padding: 20px;
+    position: relative;
+    bottom: 20px;
+    color: white;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+  }
+  .lm{
+    color: yellow;
+  }
+
+  .card-griding h2{
+    padding-bottom: 10px;
+    border-bottom: 2px solid grey;
+  }
