@@ -80,14 +80,9 @@ body {
   .card-griding{
     display:grid;
     grid-template-columns: 2fr 1fr;
-    align-items: center;
   }
 
-  .card2{
-    padding-bottom: 198px;
-    padding-top: 198px;
-  }
-
+  
   .grid{
     display: grid;
     grid-template-columns: 1fr;
@@ -114,6 +109,9 @@ body {
     justify-content: center;
   }
 
+  figcaption{
+    text-align: center;
+  }
   .country p {
     grid-column: 2;
   }
@@ -137,14 +135,17 @@ body {
   
   }
 
-  .card ul{
-    display: flex;
-    flex-direction: column;
-   
-    justify-content: center;
+  .card h2{
+    background-color: rgb(49, 155, 216);
+    padding: 20px;
+    position: relative;
+    bottom: 20px;
+    color: white;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
   }
   
-  .card h1{
+  .card12 h2{
     background-color: rgb(49, 155, 216);
     padding: 20px;
     position: relative;
@@ -157,7 +158,8 @@ body {
     color: yellow;
   }
 
-  .card-griding h2{
+  .card-griding h3{
+    text-align: center;
     padding-bottom: 10px;
     border-bottom: 2px solid grey;
   }
