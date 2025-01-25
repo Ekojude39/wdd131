@@ -1,0 +1,122 @@
+:root {
+    --primary-color: #004d1a;
+    --secondary-color: #E2DEDE;
+    --accent1-color: #003311;
+    --accent2-color: #006622; 
+    --heading-font: 'Outfit', serif;
+    --paragraph-font: 'Poppins', sans-serif;
+
+    --nav-background-color: #003311; 
+    --nav-link-color: #ffffff;
+    --nav-hover-link-color: #ffffff;
+    --nav-hover-background-color: #006622; 
+}
+
+/* Large view header and navigation */
+@media (min-width: 794px) {
+    header {
+        background-color: var(--accent1-color);
+        padding-top: 20px;
+        padding-right: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    h1 {
+        color: white;
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: left;
+        font-family: 'Outfit', sans-serif;
+    }
+
+    #menu {
+        display: none; /* Hide hamburger menu in large view */
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: flex-end;
+        list-style: none;
+    }
+
+    .navigation a {
+        display: flex;
+        color: white;
+        text-decoration: none;
+    }
+
+    .navigation a:hover {
+        background-color: var(--nav-hover-background-color);
+	color: var(--nav-hover-link-color);
+	font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .stuff {
+        margin: 1rem auto;
+    }
+
+    .headercontainer {
+        display: flex;
+      }
+      
+      h1 {
+        flex: 1;
+
+      }
+
+      header h2{
+        text-align: center;
+      }
+      
+      nav {
+        flex: 1;
+      }
+
+      .images {
+        gap: 20px;
+        grid-template-columns: repeat(3, minmax(auto, 2fr));
+        place-items: center;
+    }
+
+    main{
+        max-width: 100%;
+        position: relative;
+        bottom: 60px;
+        
+      }
+      
+      
+      main{
+        position: relative;
+        top: 70px;
+      }
+
+    figure img{
+        width: 100%;
+        height: auto;
+    }
+      
+}
+
+footer {
+    grid-area: footer; 
+    padding: 10px;
+    text-align: center;
+    background-color: var(--accent1-color);
+    margin-top: 80px;
+    box-shadow: 0 0 30px gray;
+}
+
+footer p {
+    color: white;
+}
+
+.lm {
+    color: yellow;
+}
