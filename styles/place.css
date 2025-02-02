@@ -1,0 +1,244 @@
+.nunito-uniquifier 
+{
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+:root {
+    --primary-color: #00205b;
+    --secondary-color:#ffffff;
+    --accent1-color: #3e40c3;
+    --accent2-color: #bf0c3d; 
+    --heading-font: 'Outfit', serif;
+    --paragraph-font: 'Poppins', sans-serif;
+
+    --nav-background-color: #00205b; 
+    --nav-link-color: #ffffff;
+    --nav-hover-link-color: #ffffff;
+    --nav-hover-background-color: #3e40c3; 
+    --transparent-boxes-color: rgba(255, 255, 255, 0.785);
+    --transparent-boder-bottom: #0169233c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hero img {
+    position: relative;
+}
+
+.hero {
+    width: 100%;
+} 
+
+h1,h2, h3,h4,h5,h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-family: "Nunito", serif;
+}
+
+header h1 {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    position: relative;
+    border-bottom: 20px solid var(--accent2-color);
+
+}
+
+.datas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid var(--transparent-boder-bottom);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.datas:last-of-type {
+    border-bottom: transparent;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.datas img {
+    width: 8rem;    
+}
+
+.datas span{
+  font-weight: bold;
+  display: grid;
+  grid-column: 1;
+  text-align: right;
+  
+}
+
+li {
+  
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.datadetails, .weatherdetails {
+    margin-top: 40px;
+    text-align: left;
+    list-style: none;
+}
+
+
+footer {
+  grid-area: footer; 
+  padding: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  background-color: var(--accent1-color);
+  box-shadow: 0 0 30px gray;
+}
+
+footer p {
+  color: white;
+}
+
+.lm {
+  color: yellow;
+}
+
+
+
+@media screen and  (min-width: 768px) {
+    h1  {
+        font-weight: 800;
+        font-size: 5rem;
+    }
+    
+    .hero img {
+        height: 20%;
+    }
+
+    .datas {
+      background-color: var(--transparent-boxes-color);
+      max-width: 300px;
+      position: absolute;
+      border-bottom: transparent;
+      box-shadow: 0 0 15px gray;
+      display: flex;
+      
+    }
+
+  header, main, footer {
+      margin: 0;
+      padding: 0;
+  }
+
+
+  section {
+    position: absolute;
+    background-color: rgba(256, 256, 256, .8);
+    width: max-content;
+}
+  
+
+
+    .datas span{
+        font-weight: bold;
+    }
+
+    .datas h2{
+            background-color: var(--accent2-color);
+            text-align: left;
+            margin-left: 0.5rem;
+            margin-right: 4rem;
+            padding-left: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            color: var(--secondary-color);
+            top: 9rem;
+            z-index: 2;
+    }
+
+    
+    
+    .datas:first-of-type {
+        top: 200px;
+        left: 20px;
+    }
+
+    .datas:last-of-type {
+      bottom: 150px;
+        right: 20px; /* Add margin to create space between the last .datas and the footer */
+  }
+
+    .datas:last-of-type h2::after {
+        content: "⛅";
+        opacity: 0.8;
+        font-size: 2rem;
+        margin-left: 10px;
+        margin-bottom: 20px;
+
+    }
+        
+    h2 {
+        background-color: var(--color2);
+        width: 15rem;
+        color: var(--color3);
+    }
+
+    .datas img {
+        display: none;
+    }
+
+    
+
+    .datadetails, .weatherdetails {
+        margin-top: 10px;
+    }
+    li {
+        padding-bottom: 1rem;
+    }
+    
+    footer {
+      position: relative; /* Ensure the footer is positioned relative to the normal flow */
+      z-index: 1; /* Bring the footer above other elements if needed */
+      padding: 10px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      text-align: center;
+      background-color: var(--accent1-color);
+      box-shadow: 0 0 30px gray;
+  }
+    
+    footer p {
+      color: white;
+    }
+    
+    .lm {
+      color: yellow;
+    }
+
+    .hero{
+      border-bottom: transparent;
+      position: relative;
+      width: 100%;
+    }
+
+
+    
+
+
+}
