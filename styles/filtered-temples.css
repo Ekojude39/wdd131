@@ -115,9 +115,6 @@ header{
   text-align: center;
 }
 
-.active::before {
-	  /* just a wayfinding symbol for the user */
-}
 
 
 
