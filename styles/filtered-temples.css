@@ -1,0 +1,279 @@
+:root {
+  --primary-color: #004d1a;
+  --secondary-color: #E2DEDE;
+  --accent1-color: #003311;
+  --accent2-color: #006622; 
+  --heading-font: 'Outfit', serif;
+  --paragraph-font: 'Poppins', sans-serif;
+
+  --nav-background-color: #003311; 
+  --nav-link-color: #ffffff;
+  --nav-hover-link-color: #ffffff;
+  --nav-hover-background-color: #006622; 
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  box-sizing: border-box; 
+  grid-template-rows: auto 1fr auto; 
+  grid-template-areas: 
+      "header header"
+      "main aside"
+      "footer footer";
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Outfit", sans-serif;
+}
+
+* {
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ header h1 {
+	text-align: left;
+	font-family: "Outfit", serif;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+  color: white;
+}
+
+h2 {
+		font-size: 1.2rem;
+		color: var(--accent1-color);
+		text-align: left;
+		margin: 1rem;
+	}
+
+main h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+nav {
+	max-width: 700px;
+	margin: 1rem auto;
+}
+
+header{
+  background-color: var(--accent1-color);
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: var(--accent1-color);
+ 	position: relative;
+	float: right;
+	bottom: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#menu::before {
+	content: "☰";
+  color: var(--nav-link-color);
+	
+}
+
+#menu.open::before {
+	content: "X";
+
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: var(--accent1-color);
+	color: #fff;
+  justify-content: center;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: var(--nav-hover-background-color);
+	color: var(--nav-hover-link-color);
+	font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+  text-align: center;
+}
+
+.active::before {
+	  /* just a wayfinding symbol for the user */
+}
+
+
+
+  .temple-card {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #d1cece66;
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 15px gray;
+}
+
+.temple-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.temple-card p {
+
+    font-size: 0.98rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    
+}
+
+.location, .area, .dedicated {
+  font-weight: bold;
+  grid-column: 1;
+  color: var(--accent1-color);
+  
+}
+
+.ps {
+  grid-column: 2;
+  
+}
+
+main{
+  padding: 10px;
+}
+
+
+/* large view navigation ************************************/
+@media (min-width: 704px) {
+	h1 {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	
+
+	
+
+  main{
+    max-width: 100%;
+    position: relative;
+    bottom: 60px;
+    
+  }
+  
+  
+  main{
+    position: relative;
+    top: 70px;
+   
+  }
+
+  main h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .images {
+    gap: 20px;
+    display: grid; 
+    grid-template-columns: repeat(2, minmax(100px, 1fr)); 
+    grid-gap: 20px;
+
+    place-items: center;}
+}
+
+figure {
+    text-align: center;
+    margin: 20px;
+    width: 100%;
+}
+figure img {
+    width: 100%;
+    margin-right: 20px;
+    height: auto;
+    box-shadow: 0 0 30px gray;
+}
+
+
+
+
+section h2{
+  text-align: center;
+  
+}
+
+
+@media (min-width: 794px) {
+
+    #menu {
+      display: none; /* Hide hamburger menu in large view */
+  }
+
+  .navigation {
+      display: flex;
+      gap: 20px;
+      justify-content: flex-end;
+      list-style: none;
+  }
+
+  .navigation a {
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+  }
+
+  .navigation a:hover {
+      background-color: var(--accent2-color);
+      color: var(--accent1-color);
+      font-weight: 700;
+  }
+
+}
+
+footer {
+  grid-area: footer; 
+  padding: 10px;
+  text-align: center;
+  background-color: var(--accent1-color);
+  margin-top: 10px;
+  box-shadow: 0 0 30px gray;
+}
+
+footer p {
+  color: white;
+}
+
+.lm {
+  color: yellow;
+}
