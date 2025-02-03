@@ -1,9 +1,17 @@
-const lastModified = document.querySelector("#last-modified");
+const lastmodified = document.querySelector("#last-modified");
 
 const today = new Date();
-const formattedDate = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'numeric', year: 'numeric' }).format(today);
+const currentDay = today.getDate();
+const currentMonth = today.getMonth() + 1;
+const currentYear = today.getFullYear();
 
-if (lastModified) lastModified.textContent = formattedDate;
+const formattedDate = `${currentDay}/${currentMonth}/${currentYear}`;
+
+if (lastmodified) lastmodified.textContent = formattedDate;
+
+document.querySelector("#last-modified").textContent = document.lastModified;
+
+document.querySelector("#last-modified").textContent = document.lastModified;
 
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
