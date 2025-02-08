@@ -1,0 +1,85 @@
+:root {
+    --primary-color: #00205b;
+    --secondary-color:#ffffff;
+    --accent1-color: #0a3dd416;
+    --accent2-color: #bf0c3d; 
+    --heading-font: 'Outfit', serif;
+    --paragraph-font: 'Poppins', sans-serif;
+
+    --heading-font: 'Outfit', serif;
+    --paragraph-font: 'Poppins', sans-serif;
+}
+
+
+body{
+    background-color: var(--accent1-color);
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+    text-align: center;
+
+}
+
+p{
+    color: black;
+    font-family: "Poppins";
+}
+
+span{
+    font-weight: bold;
+}
+
+header{
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid var(--primary-color);
+    text-align: center;
+
+}
+
+header h1{
+    color: var(--primary-color);
+}
+
+section{
+    border: 2px solid black;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgb(229, 218, 218);
+    border-radius: 10px;
+}
+
+.wireframe img {
+    display: block; /* Required for margin auto to work */
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+
+footer {
+    grid-area: footer; 
+    padding: 10px;
+    text-align: center;
+
+    
+  }
+  
+  footer p {
+    color: var(--accent1-color);
+  }
+  
+  .lm {
+    color: var(--amber-yellow);
+  }
+
+  figcaption{
+    color: var(--white);
+    text-align: center;
+  }
