@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <script src="scripts/form.js" defer></script>
+    <link rel="stylesheet" href="styles/form.css">
+    <meta name="description" content="product review form page">
+    <meta name="author" content="Jude Nkanu Eko">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="container">
+             <h1>Product Review</h1>
+             <form method="get" action="review.html">
+                <div class="form-group">
+                    <label for="product-name">Product Name</label>
+                    <select id="product-name" name="product-name" required>
+                        <option value=""disabled selected>select a Product ...</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Overall Rating</label>
+                    <div class="Rating">
+                        <div class="star">
+                            <label for="star1" title="1 star">★</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                        </div>
+                        <div class="star">
+                            <label for="star2" title="2 stars">★★</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                        </div>
+                        <div class="star">
+                            <label for="star3" title="3 stars">★★★</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                        </div>
+                        <div class="star">
+                            <label for="star4" title="4 stars">★★★★</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                        </div>
+                        <div class="star">
+                            <label for="star5" title="5 stars">★★★★★</label>
+                            <input type="radio" id="star5" name="rating" value="5">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form group">
+                    <label for="installation-date">Date of Installation</label>
+                    <input type="date" id="installation-date" name="installation-date" required>
+                </div>
+                <fieldset class="form-group">
+                    <legend>Which features did you find useful in the product? (Check all that apply)</legend>
+                    <label><input type="checkbox" name="features" value="durability"> Durability</label><br>
+                    <label><input type="checkbox" name="features" value="ease-of-use"> Ease of Use</label><br>
+                    <label><input type="checkbox" name="features" value="performance"> Performance</label><br>
+                    <label><input type="checkbox" name="features" value="design"> Design</label>
+                </fieldset>
+
+                <div class="form group">
+                    <label for="written-review">Written Review (Optional)</label>
+                    <textarea id="written-review" name="written-review" rows="5" cols="30"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="your-name">Your Name (Optional)</label>
+                    <input type="text" id="your-name" name="your-name" pattern="[a-zA-Z ]+">
+                </div>
+
+                <input type="submit" value="Post Review">
+             </form>
+
+             <footer>
+                &copy; 2025 Jude Nkanu Eko Nigeria</p>
+                <p class="lm">Last Modified: <span id="last-modified"></span></p>
+             </footer>
+        </div>
+    </main>
+    
+</body>
+</html>
