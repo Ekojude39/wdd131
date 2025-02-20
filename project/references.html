@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References - Discover the USA</title>
+    <link rel="stylesheet" href="styles/exploring-america.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="images/exploring-america-sitelogo.jpg" alt="USA Logo">
+            </div>
+            <nav>
+                <button class="mobile-menu" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="exploringamerica.html">Home</a></li>
+                    <li><a href="landmarks.html">Landmarks</a></li>
+                    <li><a href="weather.html">Weather</a></li>
+                    <li><a href="culture.html">Culture</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="references-page">
+            <div class="container">
+                <h1 class="section-title">References</h1>
+                <ul id="referencesList" class="references-list">
+                    <!-- References will be loaded via JavaScript -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2025 Jude Nkanu Eko USA</p>
+            <p class="lm">Last Modified: <span id="last-modified"></span></p>
+            <a href="references.html">References</a>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+
+    <script src="scripts/scripts.js" defer></script>
+</body>
+</html>
